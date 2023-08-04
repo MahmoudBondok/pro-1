@@ -1,0 +1,1130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  direction: ltr;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.nav_dash {
+  left: auto;
+  right: 0;
+  padding: 0 10px 0 0 !important;
+}
+
+.nav_dash .menu_opt {
+  padding: 20px 18px;
+}
+
+.nav_dash .menu_opt,
+.nav_dash .welcom {
+  float: left;
+}
+
+.nav_dash.min .welcom {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.nav_dash .profile,
+.nav_dash .notification {
+  float: right;
+}
+
+.nav_dash .notification {
+  margin: 20px 15px 19px 0 !important;
+}
+
+.nav_dash .profile .down_profile {
+  left: auto;
+  right: 0;
+}
+
+.nav_dash .profile .down_profile li a i {
+  margin: 0 7px 0 0 !important;
+}
+
+.nav_dash .notification .down_notif {
+  left: auto;
+  right: 0;
+}
+
+.nav_dash .notification .down_notif ul li a {
+  text-align: left;
+}
+
+.nav_dash .notification .down_notif ul li a p,
+.nav_dash .notification .down_notif ul li a h4 {
+  direction: ltr;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.nav_dash .notification .down_notif .all_notif i {
+  margin: 0 3px 0 0 !important;
+}
+
+.menu {
+  right: auto;
+  left: 0;
+}
+
+.menu .logo img {
+  float: left;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.menu .links .link p,
+.menu .links .link .base_link {
+  padding: 14px 10px;
+}
+
+.menu .links .link p .ico,
+.menu .links .link .base_link .ico {
+  top: 2px;
+}
+
+.menu .links .link p span,
+.menu .links .link .base_link span {
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.menu .links .link p .arr,
+.menu .links .link .base_link .arr {
+  left: auto;
+  right: 11px;
+}
+
+.menu .close {
+  left: auto;
+  right: 12px;
+}
+
+.menu.min .links .link p,
+.menu.min .links .link .base_link {
+  padding: 15px 17px !important;
+}
+
+.menu.min .links .link_down .down_link-list,
+.menu.min .links .show_min .down_link-list {
+  right: auto;
+  left: 55px;
+}
+
+.menu.mobile_screen {
+  right: auto;
+  left: 0;
+}
+
+.menu .links .link_down .down_link-list li a, .menu .links .link_down .down_link-list li .sub {
+  padding: 10px 0 10px 20px;
+}
+
+.menu .links .link_down .down_link-list li.still:after {
+  left: auto;
+  right: 11px;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    right: auto;
+    left: -372px;
+  }
+}
+
+/*------> Content <-----*/
+.content {
+  width: calc(100% - 240px);
+  float: right;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    width: 100%;
+  }
+}
+
+.content .pagination .pagination-content {
+  -webkit-box-orient: initial;
+  -webkit-box-direction: initial;
+      -ms-flex-direction: initial;
+          flex-direction: initial;
+}
+
+.content .link_content i {
+  margin: 4px 6px;
+}
+
+.content table {
+  direction: ltr !important;
+}
+
+.content .home .statistics .top_box .search_box,
+.content .home .best-selling-products .top_box .search_box {
+  left: auto;
+  right: 0;
+}
+
+.content .home .statistics .top_box .search_box select,
+.content .home .best-selling-products .top_box .search_box select {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .home .statistics .top_box .box_title h3,
+.content .home .best-selling-products .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .home .statistics .box_content table,
+.content .home .best-selling-products .box_content table {
+  direction: ltr;
+}
+
+.content .home .statistics .custom_date .cont .fields .field,
+.content .home .best-selling-products .custom_date .cont .fields .field {
+  margin-left: 0 !important;
+  margin-right: 10px !important;
+}
+
+.content .home .statistics .custom_date .cont .fields .field .calendar .input,
+.content .home .best-selling-products .custom_date .cont .fields .field .calendar .input {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .home .statistics .custom_date .cont .fields .field .calendar .input input,
+.content .home .best-selling-products .custom_date .cont .fields .field .calendar .input input {
+  font-family: "Roboto", sans-serif !important;
+  text-align: left;
+}
+
+.content .branches .branches_content .top_box .add-branch {
+  left: auto;
+  right: 15px;
+}
+
+.content .branches .branches_content .top_box .add-branch a i {
+  margin: 5px 6px 0 0;
+}
+
+.content .branches .branches_content
+.remove_branch
+.remove_branch-content
+.btns
+button:last-of-type {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+.content .profit .search_box--profit .ui .fields .field {
+  margin-left: 0 !important;
+  margin-right: 10px !important;
+}
+
+.content .profit .search_box--profit .ui .fields .field .calendar .input {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .profit .search_box--profit .ui .fields .field .calendar .input input {
+  font-family: "Roboto", sans-serif !important;
+  text-align: left;
+}
+
+.content .profit .profit-statistics .top_box .box_title h3,
+.content .profit .profit-salary .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .addfunds .first-content .u_funds h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .addfunds .first-content .u_funds h3 span {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .addfunds .first-content .u_funds p {
+  text-align: left;
+}
+
+.content .addfunds .first-content .top_funds-infos .pay {
+  margin: 0 20px 0 0 !important;
+}
+
+.content .addfunds .first-content .top_funds-infos .pay .inpt .select .top_sel i {
+  left: auto;
+  right: 7px;
+}
+
+.content .addfunds .first-content .top_funds-infos .pay .inpt button {
+  left: auto;
+  right: 0;
+}
+
+.content .addfunds .first-content .top_funds-infos .pay .inpt .opt p {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .addfunds .national-bank .info p:first-of-type {
+  width: 445px;
+}
+
+.content .addfunds .first-content .top_funds-infos .notes p {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.content .addfunds .first-content .top_funds-infos .notes p:after {
+  right: auto;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .content .addfunds .first-content .top_funds-infos .pay.pay,
+  .content .addfunds .first-content .top_funds-infos .notes.pay {
+    margin-right: 0 !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+.content .clientarea .clientarea_content .top_box .options {
+  right: 15px;
+  left: auto;
+}
+
+.content .clientarea .clientarea_content .top_box .options .add i {
+  margin: 5px 6px 0 0 !important;
+}
+
+.content .clientarea .clientarea_content .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .clients .clients_content .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .clients .clients_content .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .fees .fees-items .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .fees .fees-items .top_box .options .add i {
+  margin: 5px 6px 0 0 !important;
+}
+
+.content .fees .fees-items .top_box .box_title h3,
+.content .fees .feesmonth .top_box .box_title h3,
+.content .fees .fee_types .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .invoices .invoices_content .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .invoices .top_box .options .search i {
+  margin: 5px 6px 0 0 !important;
+}
+
+.content .invoices .invoices_content .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .my_profile .my_profile-content .top_infos .profile_box {
+  padding: 10px 50px 10px 10px !important;
+}
+
+.content .my_profile .my_profile-content .top_infos .profile_box .infos {
+  padding-right: 0;
+  padding-left: 10px;
+  padding-top: 11px;
+}
+
+.content .my_profile .my_profile-content .top_infos .all_money .u_money,
+.content .my_profile .my_profile-content .top_infos .all_money .add-money {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.content .my_profile .my_profile-content .top_infos .all_money .u_money h3,
+.content .my_profile .my_profile-content .sections .sec .num h3,
+.content .my_profile .my_profile-content .tickets .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .my_profile .my_profile-content .tickets .tickets_item .ticket .ico {
+  right: auto;
+  left: 15px;
+}
+
+.content .my_profile .my_profile-content .tickets .tickets_item .ticket p {
+  padding: 9px 0 9px 50px !important;
+}
+
+.content .notifications .notifications-content .all .notif p:last-of-type {
+  left: auto;
+  right: 10px;
+}
+
+.content .products .products-items .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .products .products-items .top_box .options .search {
+  margin-right: 6px;
+  margin-left: 0;
+}
+
+.content .products .products-items .top_box .options .search i,
+.content .products .products-items .top_box .options .add i {
+  margin: 5px 6px 0 0;
+}
+
+.content .products .products-items .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .products .products-items .search_box .inpt:not(:last-of-type) {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.content .recharge button i {
+  margin-left: 11px;
+  margin-right: 0;
+}
+
+.content .valid_alert i,
+.content .error_alert i {
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.content .sales .sales_content .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .sales .sales_content .search_box form .inpt .icon {
+  left: auto;
+  right: 0;
+}
+
+.content .sales .sales_content .search_box form .btns,
+.content .sales .sales_content .search_box form .inpt:not(:last-of-type) {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.content .sales .pay_content .pay_box .pay_links li:not(:last-of-type) {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.content .sales .pay_content .pay_box .pay_cash .inpt:not(:last-of-type),
+.content .sales .pay_content .pay_box .pay_cash-cart .inpt:not(:last-of-type) {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.content .sales .pay_content .pay_box .pay_cart .prt:last-of-type {
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.content .sales .sales_content .search_box form .btns .remove {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.content .client_search .box_client .top_title .close {
+  left: auto;
+  right: 15px;
+}
+
+.content .settings .settings_content form .inpt .select .top_sel i {
+  left: auto;
+  right: 7px;
+}
+
+.content .settings .settings_content form .logo .logo-pre .remove svg {
+  left: 4px;
+}
+
+.content .settings .settings_content .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .settings .settings_content form .inpt {
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+.content .submitticket button i {
+  margin-right: 0;
+  margin-left: 11px;
+}
+
+.content .supporttickets .supporttickets_content .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .supporttickets .supporttickets_content .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .supporttickets .supporttickets_content .top_box .options .search i {
+  margin: 5px 6px 0 0;
+}
+
+.content .taxes .taxes-items .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .taxes .taxes-items .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .units-products .units .top_box .options,
+.content .units-products .inquiry .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .units-products .units .top_box .options .add i,
+.content .units-products .units .top_box .options .search i,
+.content .units-products .inquiry .top_box .options .add i,
+.content .units-products .inquiry .top_box .options .search i {
+  margin: 5px 6px 0 0;
+}
+
+.content .units-products .units .top_box .box_title h3,
+.content .units-products .inquiry .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .units-products .units .search_box .inpt:not(:last-of-type),
+.content .units-products .inquiry .search_box .inpt:not(:last-of-type) {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.content .users .users_content .top_box .options {
+  left: auto;
+  right: 15px;
+}
+
+.content .users .users_content .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .users .users_content .top_box .options .add i,
+.content .users .users_content .top_box .options .search i {
+  margin: 5px 6px 0 0;
+}
+
+.content .users .users_content .top_box .options .search {
+  margin-left: 0;
+  margin-right: 6px;
+}
+
+.content
+.viewinvoice
+.viewinvoice_content
+.tab
+.tab_con
+.tabl
+.all_tab
+.elm-lis
+p {
+  width: 70%;
+  font-weight: 500;
+}
+
+.content
+.viewinvoice
+.viewinvoice_content
+.tab-2
+.tab_con
+.tabl
+.all_tab
+.elm-lis
+p {
+  font-weight: 500;
+}
+
+.content .viewticket .viewticket_content .chat .chat_content .msg_me .msg_text {
+  float: right;
+}
+
+.content
+.viewticket
+.viewticket_content
+.chat
+.chat_content
+.msg_support
+.msg_text {
+  float: left;
+}
+
+.content
+.viewticket
+.viewticket_content
+.chat
+.chat_content
+.msg
+.msg_text
+.pers_info
+p,
+.content
+.viewticket
+.viewticket_content
+.chat
+.chat_content
+.msg_me
+.msg_text
+.pers_info
+p {
+  left: auto;
+  right: 0;
+}
+
+.content .viewticket .viewticket_content .infos {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.content .viewticket .viewticket_content .infos .infos_content .io h4 i {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+.content .viewticket .viewticket_content .chat .write_msg .area_write {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.content
+.viewticket
+.viewticket_content
+.chat
+.write_msg
+.inputs
+input:not(:last-of-type) {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.content
+.viewticket
+.viewticket_content
+.chat
+.write_msg
+.file_up
+.files
+.logo-pre
+.remove
+svg {
+  left: 4px;
+}
+
+@media (max-width: 870px) {
+  .content .viewticket .viewticket_content .infos {
+    margin-left: 0;
+  }
+}
+
+.content .users .users_content .search_box .inpt:not(:last-of-type) {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.content .fees .add_fees .add_content .sec .inpt {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content .fees .add_fees .btns button:first-of-type {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.content .supporttickets .add_content .sec .inpt {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content .supporttickets .add_content .sec .logo .logo-pre {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.content .supporttickets .add_content .sec .logo .logo-pre .remove svg {
+  left: 4px;
+}
+
+.content .taxes .add_taxes .add_content .sec .inpt {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.content .products .add_product .edit_form .prod-sec .sec .inpt .get_num,
+.content .products .modify_product .edit_form .prod-sec .sec .inpt .get_num {
+  right: 0;
+  left: auto;
+}
+
+.content .products .add_product .edit_form .prod-sec .sec .inpt,
+.content .products .modify_product .edit_form .prod-sec .sec .inpt {
+  margin: 0 10px 10px 0 !important;
+}
+
+.content .products .add_product .edit_form .prod-sec .logo .logo-pre,
+.content .products .modify_product .edit_form .prod-sec .logo .logo-pre {
+  margin: 0 0 0 10px;
+}
+
+.content
+.products
+.modify_product
+.edit_form
+.prod-sec
+.logo
+.logo-pre
+.remove
+svg {
+  left: 4px;
+}
+
+.content .products .add_product .edit_form .prod-sec .sec .check p,
+.content .products .modify_product .edit_form .prod-sec .sec .check p,
+.content .fees .add_fees .add_content .sec .check p {
+  padding-right: 0;
+  padding-left: 26px;
+}
+
+.content .products .add_product .edit_form .prod-sec .sec .check p:after,
+.content .products .modify_product .edit_form .prod-sec .sec .check p:after,
+.content .fees .add_fees .add_content .sec .check p::after {
+  left: 0;
+  right: auto;
+}
+
+.content .products .add_product .edit_form .prod-sec .sec .check svg,
+.content .products .modify_product .edit_form .prod-sec .sec .check svg,
+.content .fees .add_fees .add_content .sec .check svg {
+  top: 25px;
+  right: auto;
+  left: 3px;
+}
+
+.content .invoices .invoices_content .qr-code {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  left: auto;
+}
+
+.content .invoices .invoices_content .ps table thead tr th .checking p {
+  left: 16px;
+}
+
+.content .fees .add_fees .add_content .sec .check svg {
+  top: 36px;
+  right: auto;
+  left: 3px;
+}
+
+.content
+.clients
+.modify_client
+.modify_form
+.edits_links
+li:not(:last-of-type) {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.content
+.clients
+.modify_client
+.modify_form
+.client_info-modify
+.pack
+.pack_co:first-of-type {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+.content .clients .modify_client .modify_form .btns button:first-of-type {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content .clients .modify_client .modify_form .client_info-modify .sec .inpt {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content
+.clients
+.modify_client
+.modify_form
+.customer_purchases-modify
+.txt
+.btns_con
+button:first-of-type,
+.content
+.clients
+.modify_client
+.modify_form
+.products_warranty-modify
+.txt
+.btns_con
+button:first-of-type {
+  border-left: 1px solid #d5d5d5;
+  border-right: 0;
+}
+
+.content
+.branches
+.branches_content-edits
+.edit_branch
+.edit_form
+.edits_links
+li:not(:last-of-type) {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+.content .branches .branches_content-edits .edit_branch .edit_form .check p {
+  padding-right: 0;
+  padding-left: 26px;
+}
+
+.content
+.branches
+.branches_content-edits
+.edit_branch
+.edit_form
+.check
+p:after {
+  right: auto;
+  left: 0;
+}
+
+.content .branches .branches_content-edits .edit_branch .edit_form .check svg {
+  right: auto;
+  left: 3px;
+}
+
+.content
+.branches
+.branches_content-edits
+.edit_branch
+.edit_form
+.logo
+.logo-pre {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.content
+.branches
+.branches_content-edits
+.edit_branch
+.edit_form
+.logo
+.logo-pre
+.remove
+svg {
+  left: 4px;
+}
+
+.content
+.branches
+.branches_content-edits
+.edit_branch
+.edit_form
+.btns
+button:first-of-type {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content
+.products
+.remove_product
+.remove_product-content
+.btns
+button:last-of-type {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+@media (max-width: 1250px) {
+  .content .units-products .units .search_box .inpt,
+  .content .units-products .inquiry .search_box .inpt {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+}
+
+.content
+.viewticket
+.viewticket_content
+.chat
+.write_msg
+.file_up
+.files
+.logo-pre {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.content .viewticket .viewticket_content .infos .top_box .box_title h3 {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content
+.branches
+.branches_content-edits
+.edit_branch
+.edit_form
+.check
+p:after {
+  top: 19px;
+}
+
+.content .branches .branches_content-edits .edit_branch .edit_form .check svg {
+  top: 22px;
+}
+
+.content .clients .clients_content .top_box .options .add i,
+.content .clients .clients_content .top_box .options .search i {
+  margin: 5px 6px 0 0;
+}
+
+.content
+.clients
+.remove_client
+.remove_client-content
+.btns
+button:last-of-type {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.content .clients .add_client .form_add .btns button:first-of-type {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content .clients .add_client .form_add .sec .inpt {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content .fees .add_fees .add_content .sec .check p:after {
+  top: 31px;
+}
+
+.content .fees .add_fees .add_content .sec .check svg {
+  top: 35px;
+}
+
+.content .invoices .invoices_content .pay_tab p span {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content .products .modify_product .edit_form .btns button:first-of-type {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.content .supporttickets .btns a:first-of-type {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+.nav_dash .notification .down_notif {
+  left: auto;
+  right: -10px;
+}
+
+.nav_dash .notification .down_notif:after {
+  left: auto;
+  right: 24px;
+}
+
+@media (max-width: 500px) {
+  .nav_dash .notification .down_notif {
+    left: 50%;
+    right: auto !important;
+  }
+  .nav_dash .notification .down_notif:after {
+    left: auto !important;
+    right: 72px !important;
+  }
+}
+
+.nav_dash .notification {
+  margin: 0 !important;
+}
+
+.nav_dash .profile .down_profile:after {
+  left: auto;
+  right: 17px;
+}
+
+.invoices span {
+  font-weight: 400 !important;
+}
+
+.content .invoices .container-z .tab-content .invoice-tab .top_prt h4 {
+  text-align: left;
+}
+
+.content .invoices .invoices_content .cnt_1 .next_btn button i,
+.content .invoices .invoices_content .cnt_1 .next_btn a i,
+.content .invoices .invoices_content .cnt_2 .next_btn button i,
+.content .invoices .invoices_content .cnt_2 .next_btn a i {
+  top: 5px;
+  left: auto;
+  right: -7px;
+}
+
+.content .invoices .invoices_content .cnt_1 .next_btn .prv i,
+.content .invoices .invoices_content .cnt_2 .next_btn .prv i {
+  left: auto;
+  left: -7px;
+}
+
+.content .invoices .invoices_content .cnt_1 .next_btn .prv,
+.content .invoices .invoices_content .cnt_2 .next_btn .prv {
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+.content .invoices .invoices_content .cnt_1 .ps table,
+.content .invoices .invoices_content .cnt_2 .ps table {
+  min-width: 960px;
+}
+
+.content .invoices .done i {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.content .products .code_bar .inpt .get_num {
+  right: 0;
+  left: auto;
+}
+
+.content .invoices .container-z .dropdown-toggle::after {
+  position: relative;
+  right: -3px;
+  left: auto;
+}
+
+.content .settings .settings_content .links_stng li {
+  float: left;
+}
+
+.content .settings .settings_content .all_sections .second_section .info .oy p:not(:last-of-type), .content .settings .settings_content .all_sections .fist_section .info .oy p:not(:last-of-type), .content .settings .settings_content .all_sections .third_section .info .oy p:not(:last-of-type) {
+  margin-right: 16px;
+  margin-left: 0;
+}
+
+.content .settings .settings_content .all_sections .second_section form .inpt .select .top_sel i, .content .settings .settings_content .all_sections .fist_section form .inpt .select .top_sel i, .content .settings .settings_content .all_sections .third_section form .inpt .select .top_sel i {
+  left: auto;
+  right: 7px;
+}
+
+.content .settings .settings_content .all_sections .second_section form .logo .logo-pre, .content .settings .settings_content .all_sections .fist_section form .logo .logo-pre, .content .settings .settings_content .all_sections .third_section form .logo .logo-pre {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.content .settings .settings_content .all_sections .second_section form .logo .logo-pre .remove svg, .content .settings .settings_content .all_sections .fist_section form .logo .logo-pre .remove svg, .content .settings .settings_content .all_sections .third_section form .logo .logo-pre .remove svg {
+  right: -4px;
+  left: auto;
+}
+
+.pos .sections .section1 .pads .subpads .actionpad a {
+  padding-left: 8px !important;
+}
+
+.pos .payment_sections .container-my .section_content .center_sections .center_sections-left .center_sections-left-top .bx_slt p {
+  left: auto;
+  right: 45px;
+}
+
+.pos .orders_valid .container-my .orders_valid-content .btm_part .actions .btns button.email {
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.pos .orders_valid .email_ .email_content .lang .btn_langs button:last-of-type {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content {
+  direction: inherit;
+}
+
+.pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .orderlines .line p:first-of-type, .pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .change .line p:first-of-type, .pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .orderlines .pos-receipt-amount p:first-of-type, .pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .change .pos-receipt-amount p:first-of-type {
+  text-align: left;
+}
+
+.pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .orderlines .line p:last-of-type, .pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .change .line p:last-of-type, .pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .orderlines .pos-receipt-amount p:last-of-type, .pos .orders_valid .container-my .orders_valid-content .btm_part .pos-receipt-content .change .pos-receipt-amount p:last-of-type {
+  text-align: right;
+}
+
+.content .invoices .email_ .email_content .lang .btn_langs button:last-of-type {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.content .invoices .container-z .dropdown-menu.show li a {
+  text-align: left;
+}
+
+.content .smtp_settings .smtp_settings-content .smtp_form .radi p input[type="radio"]:checked + label:before, .content .smtp_settings .smtp_settings-content .smtp_form .radi p input[type="radio"]:not(:checked) + label:before {
+  right: auto;
+  left: 0;
+}
+
+.content .smtp_settings .smtp_settings-content .smtp_form .radi p input[type="radio"]:checked + label, .content .smtp_settings .smtp_settings-content .smtp_form .radi p input[type="radio"]:not(:checked) + label {
+  padding-right: 0;
+  padding-left: 24px;
+}
+
+.content .smtp_settings .smtp_settings-content .smtp_form .radi p input[type="radio"]:checked + label:after, .content .smtp_settings .smtp_settings-content .smtp_form .radi p input[type="radio"]:not(:checked) + label:after {
+  left: 4px;
+  right: auto;
+}
+
+.content .barcode_settings .barcode_settings-content .barcode_form .sec .inpt .cm {
+  left: auto;
+  right: 0;
+}
+
+.content .invoices .email_ .email_content .error i {
+  color: #F00;
+  margin-left: 0;
+  margin-top: 2px;
+  font-size: 17px;
+  margin-right: 7px;
+  position: relative;
+  top: 0px;
+}
+/*# sourceMappingURL=en.css.map */

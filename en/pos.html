@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="css/en.css" />
+  </head>
+  <body class="pos">
+    <!-------------------------- Start Code ----------------------------->
+    <!-- Navbar -->
+    <div class="navB">
+      <div class="nav_content">
+        <div class="lg">
+          <a class="logo">
+            <img src="../assets/logo-en-white.png" />
+          </a>
+          <a class="orders">
+            <i class="fas fa-ticket-alt"></i>
+            Orders
+            <div class="nu">1</div>
+          </a>
+        </div>
+        <div class="search">
+          <i class="fa fa-search"></i>
+          <i class="fa fa-times"></i>
+          <input type="text" placeholder="Search Products..." />
+        </div>
+        <div class="infos">
+          <div class="name">Mitchell Admin</div>
+          <div class="wifi notConnect">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              width="25px"
+              height="25px"
+              viewBox="0 0 455.838 455.838"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M454.968,160.667c-0.175-0.257-0.374-0.498-0.595-0.719C393.884,99.46,313.461,66.147,227.919,66.147
+                        c-85.537,0-165.953,33.306-226.439,93.788c-0.94,0.933-1.48,2.21-1.48,3.552c0,1.326,0.526,2.598,1.465,3.536l33.113,33.114
+                        c0.938,0.938,2.209,1.464,3.535,1.464c1.326,0,2.598-0.527,3.535-1.464c49.836-49.839,115.988-77.285,186.271-77.285
+                        c70.282,0,136.434,27.447,186.271,77.284c0.938,0.938,2.209,1.464,3.534,1.464c1.326,0,2.599-0.527,3.535-1.464l33.113-33.114
+                        c0.938-0.938,1.465-2.209,1.465-3.536C455.839,162.481,455.534,161.499,454.968,160.667z"
+                  />
+                  <path
+                    d="M227.919,153.719c-62.056,0-120.461,24.231-164.458,68.229c-1.952,1.953-1.952,5.119,0.001,7.071l33.01,33.009
+                        c0.938,0.938,2.209,1.465,3.535,1.465c1.326,0,2.598-0.527,3.535-1.465c33.277-33.277,77.448-51.605,124.377-51.605
+                        c46.931,0,91.102,18.328,124.376,51.605c0.938,0.938,2.21,1.465,3.536,1.465s2.598-0.527,3.535-1.465l33.011-33.009
+                        c0.938-0.938,1.465-2.209,1.465-3.536c0-1.327-0.525-2.598-1.465-3.536C348.38,177.951,289.975,153.719,227.919,153.719z"
+                  />
+                  <path
+                    d="M227.919,241.292c-38.701,0-75.126,15.11-102.564,42.549c-0.939,0.938-1.465,2.209-1.465,3.537
+                        c0,1.326,0.525,2.598,1.465,3.535l33.01,33.01c0.938,0.938,2.209,1.465,3.535,1.465s2.598-0.527,3.535-1.465
+                        c16.719-16.719,38.909-25.926,62.484-25.926s45.767,9.209,62.485,25.926c0.938,0.938,2.209,1.465,3.534,1.465
+                        s2.598-0.527,3.535-1.465l33.01-33.01c1.952-1.953,1.952-5.119,0-7.07C303.046,256.402,266.621,241.292,227.919,241.292z"
+                  />
+                  <path
+                    d="M227.919,334.083c-13.521,0-26.229,5.264-35.784,14.822c-1.952,1.953-1.952,5.118,0.001,7.07l32.248,32.25
+                        c0.938,0.938,2.209,1.465,3.535,1.465s2.599-0.527,3.535-1.465l32.248-32.25c1.952-1.953,1.952-5.118,0-7.071
+                        C254.146,339.347,241.438,334.083,227.919,334.083z"
+                  />
+                </g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+            </svg>
+          </div>
+          <div class="close"><i class="fas fa-power-off"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- Sections -->
+    <div class="sections">
+      <div class="section1">
+        <div class="order_sec">
+          <div class="content_ord">
+            <!-- <div class="empty">
+                    <div class="empty_content">
+                        <i class="fa fa-shopping-cart"></i>
+                        <h3>This order is empty</h3>
+                    </div>
+                </div> -->
+            <div class="hasProduct">
+              <div class="product__">
+                <div class="prod_info">
+                  <h4>Conference Chair (CONFIG) (Steel)</h4>
+                  <p><span>1.00 </span>Units at $ 16.50 / Units</p>
+                </div>
+                <div class="prod_price">
+                  <h3>$ 16.55</h3>
+                </div>
+              </div>
+              <div class="product__ focu">
+                <div class="prod_info">
+                  <h4>Conference Chair (CONFIG) (Steel)</h4>
+                  <p><span>1.00 </span>Units at $ 16.50 / Units</p>
+                </div>
+                <div class="prod_price">
+                  <h3>$ 16.55</h3>
+                </div>
+              </div>
+            </div>
+            <div class="total">
+              <div class="total_content">
+                <p>Total: <span>$ 39.22</span></p>
+                <p>Taxes: <span>$ 0.00</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pads">
+          <div class="subpads">
+            <div class="actionpad">
+              <a class="rewards">
+                <div class="ico">
+                  <i class="fa-solid fa-box-open"></i>
+                </div>
+                Reward
+              </a>
+              <a class="user">
+                <div class="ico">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                Clients
+              </a>
+              <a class="pay">
+                <div class="nums"><span>$</span>250.6</div>
+                Pay
+              </a>
+            </div>
+            <div class="numpad">
+              <button class="input-button number-char">1</button>
+              <button class="input-button number-char">2</button>
+              <button class="input-button number-char">3</button>
+              <button class="mode-button selected-mode">Quantity</button>
+              <br />
+              <button class="input-button number-char">4</button>
+              <button class="input-button number-char">5</button>
+              <button class="input-button number-char">6</button>
+              <button class="mode-button">Discount</button>
+              <br />
+              <button class="input-button number-char">7</button>
+              <button class="input-button number-char">8</button>
+              <button class="input-button number-char">9</button>
+              <button class="mode-button">Price</button>
+              <br />
+              <button class="input-button numpad-minus">+/-</button>
+              <button class="input-button number-char">0</button>
+              <button class="input-button number-char">.</button>
+              <button class="input-button numpad-backspace">
+                <img src="../assets/backspace.png" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products-widget">
+        <div class="products-widget-control">
+          <div class="breadcrumbs a">
+            <a class="homee-ico">
+              <i class="fa fa-home"></i>
+            </a>
+            <img src="../assets/bc-arrow-big.png" />
+            <button class="selc">Chairs</button>
+          </div>
+          <div class="categorys opn">
+            <button class="category-simple-button">Chairs</button>
+            <button class="category-simple-button">Desks</button>
+            <button class="category-simple-button">Drinks</button>
+            <button class="category-simple-button">Food</button>
+            <button class="category-simple-button">Miscellaneous</button>
+          </div>
+        </div>
+        <div class="product-list-container">
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+          <div class="product">
+            <img src="../assets/image.png" />
+            <p class="text">Conference Chair (CONFIG) (Steel)</p>
+            <div class="price">$20.5</div>
+          </div>
+        </div>
+      </div>
+      <div class="switchpane">
+        <a>
+          Pay
+          <span>$0.00</span>
+        </a>
+        <a>
+          Review
+          <span>0 items</span>
+        </a>
+      </div>
+    </div>
+    <!-- Payment Sections -->
+    <div class="payment_sections">
+      <div class="container-my">
+        <div class="section_content">
+          <div class="top_section">
+            <h3>Payment</h3>
+            <div class="btn_1">
+              <i class="fa fa-angle-double-left fa-fw"></i>Back
+            </div>
+            <div class="btn_2 vc">
+              Validate<i class="fa fa-angle-double-right fa-fw"></i>
+            </div>
+          </div>
+          <div class="center_sections">
+            <div class="center_sections-left">
+              <div class="center_sections-left-top">
+                <div class="bx_slt">
+                  <h5>Cash</h5>
+                  <p>45.26</p>
+                  <i class="fa fa-times-circle"></i>
+                  <div class="ipt">
+                    <input type="text" placeholder="Approval Symbol" />
+                  </div>
+                </div>
+                <div class="bx_slt">
+                  <h5>Bank</h5>
+                  <p>45.26</p>
+                  <i class="fa fa-times-circle"></i>
+                  <div class="ipt">
+                    <input type="text" placeholder="Approval Symbol" />
+                  </div>
+                </div>
+              </div>
+              <div class="center_sections-left-btm">
+                <a class="btn_sel cash_btn">
+                  <i class="fa-solid fa-wallet"></i>
+                  Cash
+                </a>
+                <a class="btn_sel">
+                  <i class="fa-solid fa-building-columns"></i>
+                  Bank
+                </a>
+              </div>
+              <div class="center_sections-left-btm"></div>
+            </div>
+            <div class="center_sections-right">
+              <div class="paymentlines-container">
+                <div class="paymentlines-empty">
+                  <h3>$ 85.20</h3>
+                  <p>Please select a payment method.</p>
+                </div>
+                <div class="payment-status-container">
+                  <h4>Remaining <span>$ 0.00</span></h4>
+                  <p>Total Due <span>$ 85.20</span></p>
+                  <h5>Change <span>$ 120.80</span></h5>
+                </div>
+              </div>
+              <div class="payment-buttons-container">
+                <div class="payment-buttons">
+                  <div class="button_5">
+                    <div class="img"><i class="fa fa-user"></i></div>
+                    <p>Customer</p>
+                  </div>
+                  <div class="button_5">
+                    <div class="btn_content">
+                      <div class="img">
+                        <i class="far fa-file-alt"></i>
+                      </div>
+                      <p>Invoice</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment-numpad">
+                  <div class="numpad">
+                    <button class="input-button number-char">1</button>
+                    <button class="input-button number-char">2</button>
+                    <button class="input-button number-char">3</button>
+                    <button class="mode-button selected-mode">+10</button>
+                    <br />
+                    <button class="input-button number-char">4</button>
+                    <button class="input-button number-char">5</button>
+                    <button class="input-button number-char">6</button>
+                    <button class="mode-button">+20</button>
+                    <br />
+                    <button class="input-button number-char">7</button>
+                    <button class="input-button number-char">8</button>
+                    <button class="input-button number-char">9</button>
+                    <button class="mode-button">+50</button>
+                    <br />
+                    <button class="input-button numpad-minus">+/-</button>
+                    <button class="input-button number-char">0</button>
+                    <button class="input-button number-char">.</button>
+                    <button class="input-button numpad-backspace">
+                      <img src="../assets/backspace.png" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="switchpane">
+        <a>Validate</a>
+        <a>Review</a>
+      </div>
+    </div>
+    <!-- Orders Valid Page -->
+    <div class="orders_valid">
+      <div class="container-my">
+        <div class="orders_valid-content">
+          <div class="top_part">
+            <h3>$ 127,222.00</h3>
+            <div class="btn_2 vc">
+              New Order<i class="fa fa-angle-double-right fa-fw"></i>
+            </div>
+          </div>
+          <div class="btm_part">
+            <div class="actions">
+              <div class="btns">
+                <button class="email">
+                  <i class="fa-solid fa-file-contract"></i>
+                  Electronic contract
+                </button>
+                <button>
+                  <i class="fa fa-print"></i>
+                  Receipt printing
+                </button>
+              </div>
+            </div>
+            <div class="pos-receipt-content">
+              <img src="../assets/download.png" />
+              <div class="pos-receipt-contact">
+                <p>Demo Company</p>
+                <p>Tel: +1 (650) 691-3277</p>
+                <p>info@yourcompany.com</p>
+                <p>http://www.example.com</p>
+                <p>--------------------------------</p>
+                <p>Served by Mitchell Admin</p>
+              </div>
+              <div class="orderlines">
+                <div class="line">
+                  <p>
+                    Office Chair Black Conference Chair (CONFIG) (Aluminium)
+                  </p>
+                  <p>12.50</p>
+                </div>
+                <div class="line">
+                  <p>Conference Chair (CONFIG) (Aluminium)</p>
+                  <p>127,209.50</p>
+                </div>
+                <div class="pos-receipt-right-align">--------</div>
+                <div class="pos-receipt-amount">
+                  <p>TOTAL</p>
+                  <p>$ 68.70</p>
+                </div>
+              </div>
+              <div class="change">
+                <div class="line">
+                  <p>Bank</p>
+                  <p>12.50</p>
+                </div>
+                <div class="line">
+                  <p>Cash</p>
+                  <p>127,209.50</p>
+                </div>
+                <div class="pos-receipt-right-align">--------</div>
+                <div class="pos-receipt-amount">
+                  <p>CHANGE</p>
+                  <p>$ 68.70</p>
+                </div>
+                <div class="line">
+                  <p>Total Taxes</p>
+                  <p>$0.00</p>
+                </div>
+              </div>
+              <div class="pos-receipt-contact">
+                <p>Order 00001-014-0001</p>
+                <p>04/26/2021 10:59:59</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="email_ en">
+        <div class="email_content">
+          <h4>Contract email</h4>
+          <div class="send-email">
+            <div class="email">
+              <i class="far fa-envelope"></i>
+            </div>
+            <input type="text" placeholder="Enter the email" />
+          </div>
+          <div class="lang">
+            <p>Choose the language of the contract</p>
+            <div class="btn_langs">
+              <button class="ar">Arabic</button>
+              <button class="en">English</button>
+            </div>
+          </div>
+          <button class="send">Send</button>
+          <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Customer -->
+    <div class="customer">
+      <div class="container-my">
+        <div class="customer_content">
+          <div class="customer_content-top">
+            <div class="btns">
+              <a>Set Customer</a>
+              <a>Create</a>
+              <a>Discard</a>
+            </div>
+            <div class="btns2">
+              <a><i class="fas fa-plus"></i></a>
+              <a><i class="fa fa-undo"></i></a>
+            </div>
+            <div class="search">
+              <input type="text" placeholder="Search Customers" />
+            </div>
+          </div>
+          <div class="customer_content-bottom">
+            <table class="table table-striped table_one">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a class="editt">EDIT</a>
+                  </td>
+                  <td>
+                    4557 De Silva St, 94538, Fremont, California (US), United
+                    States
+                  </td>
+                  <td>+58 212 681 0538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table-striped table_two">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">ZIP</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>
+                    Azure Interior
+                    <br />
+                    <a>EDIT</a>
+                  </td>
+                  <td>94538</td>
+                  <td>vauxoo@yourcompany.example.com</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Error Barcode -->
+    <div class="barCode">
+      <div class="barCode_content">
+        <div class="bar_top">
+          <h3>Unknown Barcode</h3>
+          <h3>666666564641564654</h3>
+        </div>
+        <div class="center_bar">
+          <p>
+            The Point of Sale could not find any product, client employee or
+            action associated with the scanned barcode
+          </p>
+        </div>
+        <div class="bottom_bar">
+          <a>Ok</a>
+        </div>
+      </div>
+    </div>
+    <!-- Edit Customer -->
+    <div class="edit_customer">
+      <div class="container-my">
+        <div class="edit_customer_content">
+          <div class="edit_customer_content-top">
+            <div class="btns">
+              <a>Set Customer</a>
+              <a><i class="far fa-save"></i>Save</a>
+              <a>Discard</a>
+            </div>
+          </div>
+          <form class="form_edit">
+            <div class="one_part">
+              <div class="client-picture">
+                <img src="../assets/image.jpg" />
+                <input type="file" />
+              </div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="two_part">
+              <div class="left-part">
+                <div class="client-detail">
+                  <span>Street</span>
+                  <input type="text" placeholder="street" />
+                </div>
+                <div class="client-detail">
+                  <span>City</span>
+                  <input type="text" placeholder="city" />
+                </div>
+                <div class="client-detail">
+                  <span>Postcode</span>
+                  <input type="text" placeholder="ZIP" />
+                </div>
+                <div class="client-detail">
+                  <span>State</span>
+                  <select>
+                    <option>None</option>
+                    <option>Armed Forces Americas</option>
+                    <option>Alaska</option>
+                    <option>Colorado</option>
+                  </select>
+                </div>
+                <div class="client-detail">
+                  <span>Country</span>
+                  <select>
+                    <option>None</option>
+                    <option>Afghanistan</option>
+                    <option>American Samoa</option>
+                    <option>Angola</option>
+                  </select>
+                </div>
+                <div class="client-detail">
+                  <span>Loyalty</span>
+                  <input type="text" placeholder="0" />
+                </div>
+              </div>
+              <div class="right-part">
+                <div class="client-detail">
+                  <span>Language</span>
+                  <select>
+                    <option>None</option>
+                    <option>Arabic</option>
+                    <option>English (US)</option>
+                  </select>
+                </div>
+                <div class="client-detail">
+                  <span>Email</span>
+                  <input type="text" placeholder="Email" />
+                </div>
+                <div class="client-detail">
+                  <span>Phone</span>
+                  <input type="text" placeholder="Phone" />
+                </div>
+                <div class="client-detail">
+                  <span>Barcode</span>
+                  <input type="text" placeholder="Barcode" />
+                </div>
+                <div class="client-detail">
+                  <span>Tax ID</span>
+                  <input type="text" placeholder="Tax ID" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- End Code ----------------------------->
+    <!------- Js -------->
+    <script src="../js/library/jquery-3.6.0.min.js"></script>
+    <script src="../js/library/all.min.js"></script>
+    <script src="../js/library/bootstrap.bundle.min.js"></script>
+    <script src="../js/library/bootstrap.min.js"></script>
+    <script src="../js/library/printThis.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/pages/pos.js"></script>
+  </body>
+</html>
