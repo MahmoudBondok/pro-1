@@ -1,0 +1,259 @@
+.taxes {
+  .taxes-items {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px;
+    margin-top: 30px;
+    .top_box {
+      display: flex;
+      width: 100%;
+      position: relative;
+      flex-wrap: wrap;
+      .box_title {
+        padding: 15px;
+        h3 {
+          margin: 0;
+          font-family: "Cairo", sans-serif !important;
+          color: #222;
+          font-size: 22px;
+        }
+      }
+      .options {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        display: flex;
+        .add {
+          display: flex;
+          text-decoration: none;
+          background-color: #1b7dc0;
+          color: #fff;
+          transition: all 0.2s;
+          font-size: 14px;
+          padding: 5px 14px;
+          cursor: pointer;
+          border-radius: 2px;
+          &:hover {
+            background-color: #14649c;
+          }
+          i {
+            font-size: 11px;
+            margin: 5px 0 0 6px;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+    .ps {
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.13);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $base-color;
+      }
+      table {
+        width: 100%;
+        direction: rtl;
+        margin: 0;
+        min-width: 880px;
+        border-top: 1px solid #ccc;
+        thead tr {
+          th {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom-color: #ccc;
+            background-color: #1b7dc0;
+          }
+        }
+        tbody tr {
+          transition: all 0.2s;
+          &:hover {
+            background-color: #eee;
+          }
+          &:last-of-type {
+            td {
+              border-bottom: 0;
+            }
+          }
+          td {
+            color: #000;
+            font-size: 13px;
+            font-weight: 700;
+            p {
+              margin: 0;
+              padding: 5px 0px;
+            }
+            .btns {
+              display: flex;
+              a {
+                width: fit-content;
+                padding: 6px 15px;
+                color: #fff;
+                background: #1b7dc0;
+                margin-left: 5px;
+                font-weight: 600;
+                border-radius: 2px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                  background: #14649c;
+                }
+              }
+            }
+            .btns-e {
+              display: flex;
+              a {
+                color: #fff;
+                background: #1b7dc0;
+                margin-left: 5px;
+                font-weight: 600;
+                border-radius: 2px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all 0.2s;
+                padding: 0;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:first-of-type {
+                  &:hover {
+                    background-color: #080;
+                  }
+                }
+                &:nth-of-type(2) {
+                  &:hover {
+                    background-color: #f00;
+                  }
+                }
+                &:hover {
+                  background-color: #000;
+                }
+                i {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .add_taxes {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px;
+    margin-top: 30px;
+    .add_content {
+      width: 100%;
+      padding: 20px;
+      .sec {
+        width: 100%;
+        display: flex;
+        .inpt {
+          display: flex;
+          flex-wrap: wrap;
+          width: 50%;
+          margin-bottom: 15px;
+          position: relative;
+          margin-left: 10px;
+          .icon {
+            position: absolute;
+            left: 0;
+            height: 33px;
+            background-color: #eee;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid #ccc;
+            i {
+              color: rgb(112, 111, 111);
+              font-size: 14px;
+            }
+          }
+          label {
+            width: 100%;
+            color: #333;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          input {
+            width: 100%;
+            border: 1px solid #00000047;
+            height: 33px;
+            outline: none;
+            font-size: 14px;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+          select {
+            outline: none;
+            display: block;
+            height: 33px;
+            width: 100%;
+            padding: 0 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #00000047;
+            border-radius: 0;
+            transition: border-color ease-in-out 0.15s,
+              box-shadow ease-in-out 0.15s;
+          }
+          &.tex {
+            width: 100% !important;
+            textarea {
+              color: #555;
+              background-color: #fff;
+              border: 1px solid #00000047;
+              width: 100%;
+              height: 150px;
+              resize: none;
+              outline: none;
+              padding: 10px;
+            }
+          }
+          &.num {
+            input {
+              font-family: initial;
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Media
+  @media (max-width: 767px) {
+    .add_taxes .add_content .sec {
+      flex-wrap: wrap;
+      .inpt {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.notifications {
+  .notifications-content {
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px;
+    margin: 30px auto 0 auto;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    .all {
+      .notif {
+        display: flex;
+        border-bottom: 1px solid #cccccc7a;
+        padding: 10px;
+        position: relative;
+        flex-wrap: wrap;
+        transition: all 0.2s;
+        cursor: context-menu;
+        &:hover {
+          background-color: #1b7dc02b;
+        }
+        p {
+          margin: 0;
+          font-weight: 600;
+          font-size: 14px;
+          &:last-of-type {
+            position: absolute;
+            left: 10px;
+          }
+          a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #1b7dc0;
+          }
+        }
+      }
+    }
+    // Media
+    @media (max-width: 450px) {
+      .all .notif p:last-of-type {
+        position: unset;
+        width: 100%;
+      }
+    }
+  }
+}

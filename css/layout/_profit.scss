@@ -1,0 +1,270 @@
+.profit {
+  .search_box--profit {
+    display: flex;
+    flex-wrap: wrap;
+    .fields {
+      width: 335px;
+      .field {
+        padding: 0 !important;
+        border-radius: 0;
+        margin-left: 10px !important;
+        .calendar {
+          .input {
+            i {
+              right: 0;
+              left: auto;
+            }
+            input {
+              padding: 11px 31px 9px 14px !important;
+              font-family: "Cairo", sans-serif !important;
+              text-align: right;
+              border-radius: 0;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+    button {
+      height: 38px;
+      width: 90px;
+      background: #1b7dc0;
+      color: #fff;
+      border: 0;
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+      &:hover {
+        background-color: #14649c;
+      }
+    }
+  }
+  .profit-statistics {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px #00000012;
+    border-radius: 3px;
+    margin-top: 30px;
+    .top_box {
+      display: flex;
+      width: 100%;
+      position: relative;
+      flex-wrap: wrap;
+      .box_title {
+        padding: 15px;
+        h3 {
+          font-family: "Cairo", sans-serif !important;
+          margin: 0;
+          color: #222;
+          font-size: 22px;
+        }
+      }
+    }
+    .cont {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+      padding: 0 20px 20px 20px;
+      .stat {
+        padding: 20px 5px;
+        background-color: #1b7dc0;
+        text-align: center;
+        border-radius: 3px;
+        cursor: context-menu;
+        transition: all 0.2s;
+        &:hover {
+          background-color: #14649c;
+        }
+        h3 {
+          color: #fff;
+          font-family: auto;
+          font-size: 34px;
+          margin-bottom: 10px;
+        }
+        p {
+          margin: 0;
+          font-size: 15px;
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .profit-salary {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px;
+    margin-top: 30px;
+    .top_box {
+      display: flex;
+      width: 100%;
+      position: relative;
+      flex-wrap: wrap;
+      .box_title {
+        padding: 15px;
+        h3 {
+          margin: 0;
+          font-family: "Cairo", sans-serif !important;
+          color: #222;
+          font-size: 22px;
+        }
+      }
+      .add-branch {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        a {
+          display: flex;
+          background-color: #1b7dc0;
+          color: #fff;
+          transition: all 0.2s;
+          font-size: 14px;
+          padding: 5px 14px;
+          cursor: pointer;
+          border-radius: 2px;
+          &:hover {
+            background-color: #14649c;
+          }
+          i {
+            font-size: 11px;
+            margin: 5px 0 0 6px;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+    .ps {
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.13);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $base-color;
+      }
+      table {
+        width: 100%;
+        direction: rtl;
+        margin: 0;
+        min-width: 700px;
+        border-top: 1px solid #ccc;
+        thead tr {
+          th {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom-color: #ccc;
+            background-color: #1b7dc0;
+          }
+        }
+        tbody tr {
+          transition: all 0.2s;
+          &:hover {
+            background-color: #eee;
+          }
+          &:last-of-type {
+            td {
+              border-bottom: 0;
+            }
+          }
+          td {
+            color: #000;
+            font-size: 13px;
+            font-weight: 700;
+            p {
+              margin: 0;
+              padding: 5px 0px;
+            }
+            .btns {
+              display: flex;
+              a {
+                width: fit-content;
+                padding: 6px 15px;
+                color: #fff;
+                background: #1b7dc0;
+                margin-left: 5px;
+                font-weight: 600;
+                border-radius: 2px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                  background: #14649c;
+                }
+              }
+            }
+            .btns-e {
+              display: flex;
+              a {
+                color: #fff;
+                background: #1b7dc0;
+                margin-left: 5px;
+                font-weight: 600;
+                border-radius: 2px;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all 0.2s;
+                padding: 0;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:first-of-type {
+                  background-color: #080;
+                  &:hover {
+                    background-color: #036b03;
+                  }
+                }
+                &:nth-of-type(2) {
+                  background-color: #f00;
+                  &:hover {
+                    background-color: #cf0707;
+                  }
+                }
+                &:hover {
+                  background: #14649c;
+                }
+                i {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Media
+  @media (max-width: 900px) {
+    & {
+      .profit-statistics .cont {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .search_box--profit .ui {
+      width: 100%;
+    }
+  }
+  @media (max-width: 665px) {
+    & {
+      .profit-statistics .cont {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    & {
+      .profit-statistics .cont {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

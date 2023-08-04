@@ -1,0 +1,120 @@
+.barcode_settings {
+  .barcode_settings-content {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px;
+    padding: 20px;
+    h4 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .barcode_form {
+      .sec {
+        width: 100%;
+        display: flex;
+        .inpt {
+          display: flex;
+          flex-wrap: wrap;
+          width: 50%;
+          margin-bottom: 15px;
+          position: relative;
+          margin-left: 10px;
+          .cm {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 33px;
+            height: 33px;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #b8b8b8;
+            p {
+              margin: 0;
+              font-size: 14px;
+            }
+          }
+          label {
+            width: 100%;
+            color: #333;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          input {
+            width: 100%;
+            border: 1px solid #00000047;
+            height: 33px;
+            outline: none;
+            text-indent: 7px;
+            font-size: 14px;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+          select {
+            outline: none;
+            display: block;
+            height: 33px;
+            width: 100%;
+            padding: 0 5px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #00000047;
+            border-radius: 0;
+            transition: border-color ease-in-out 0.15s,
+              box-shadow ease-in-out 0.15s;
+          }
+          &.num {
+            input {
+              font-family: initial;
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+      .btns {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        button {
+          padding: 7px 30px;
+          background: #1b7dc0;
+          color: #fff;
+          cursor: pointer;
+          outline: none;
+          border: 0;
+          border-radius: 2px;
+          transition: all 0.2s;
+          &:hover {
+            background: #14649c;
+          }
+        }
+      }
+    }
+  }
+  // Media
+  @media (max-width: 767px) {
+    .barcode_settings-content .barcode_form .sec {
+      flex-wrap: wrap;
+      .inpt {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}

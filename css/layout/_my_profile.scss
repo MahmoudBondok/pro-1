@@ -1,0 +1,328 @@
+.my_profile {
+  width: 100%;
+  .my_profile-content {
+    width: 100%;
+    .top_infos {
+      width: 100%;
+      display: flex;
+      .profile_box {
+        background-color: #fff;
+        box-shadow: 0 0 11px 2px #00000014;
+        border-radius: 3px;
+        position: relative;
+        width: fit-content;
+        padding: 10px 10px 10px 50px;
+        display: flex;
+        .img {
+          width: 70px;
+          height: 100%;
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+          }
+        }
+        .infos {
+          height: inherit;
+          padding-right: 10px;
+          padding-top: 11px;
+          h4 {
+            margin: 0;
+            font-size: 19px;
+            font-weight: 600;
+          }
+          p {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 3px;
+          }
+        }
+        .edits {
+          width: 40px;
+          height: 40px;
+          background: #1b7dc0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          border-radius: 50%;
+          position: absolute;
+          left: 10px;
+          display: none;
+          top: 50%;
+          cursor: pointer;
+          transform: translateY(-50%);
+          transition: all 0.2s;
+          outline: none;
+          &:hover {
+            background: #14649c;
+          }
+        }
+      }
+      .all_money {
+        display: flex;
+        .u_money {
+          background-color: #fff;
+          box-shadow: 0 0 11px 2px #00000014;
+          border-radius: 3px;
+          position: relative;
+          width: fit-content;
+          padding: 10px 30px;
+          margin-right: 20px;
+          p {
+            margin: 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+            width: 100%;
+            height: fit-content;
+            display: block;
+          }
+          h3 {
+            margin: 13px 0 0 0;
+            font-family: "Ubuntu", sans-serif !important;
+            font-size: 26px;
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+        .add-money {
+          background-color: #fff;
+          box-shadow: 0 0 11px 2px #00000014;
+          border-radius: 3px;
+          position: relative;
+          width: fit-content;
+          padding: 10px;
+          display: flex;
+          margin-right: 20px;
+          flex-wrap: wrap;
+          a {
+            width: 100%;
+            background: #1b7dc0;
+            border-radius: 3px;
+            color: #fff;
+            border: 0;
+            font-size: 13px;
+            padding: 6px 10px;
+            text-decoration: none;
+            justify-content: center;
+            display: flex;
+            transition: all 0.2s;
+            outline: none;
+            &:first-of-type {
+              margin-bottom: 5px;
+            }
+            &:hover {
+              background: #14649c;
+            }
+          }
+        }
+      }
+    }
+    .sections {
+      width: 100%;
+      margin-top: 35px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      .sec {
+        text-decoration: none;
+        background-color: #fff;
+        box-shadow: 0 0 11px 2px #00000014;
+        border-radius: 3px;
+        position: relative;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          transform: scale(1.1);
+          box-shadow: 0 0 11px 2px #0000003d;
+        }
+        &:nth-of-type(2) {
+          .icon {
+            background-color: #ff4d5566;
+            i {
+              color: #ff4d55;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          .icon {
+            background-color: #a353a666;
+            i {
+              color: #a353a6;
+            }
+          }
+        }
+        &:last-of-type {
+          .icon {
+            background-color: #73769966;
+            i {
+              color: #737699;
+            }
+          }
+        }
+        .icon {
+          background-color: #5185e666;
+          width: 40px;
+          border-radius: 50%;
+          height: 40px;
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          align-items: center;
+          i {
+            color: #1062fe;
+            font-size: 16px;
+          }
+        }
+        .num {
+          width: 100%;
+          margin-top: 7px;
+          height: fit-content;
+          h3 {
+            font-family: "Ubuntu", sans-serif !important;
+            font-weight: 600;
+            font-size: 50px;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            height: fit-content;
+          }
+          p {
+            margin: 0;
+            text-align: center;
+            font-weight: 600;
+            color: #646363;
+            width: 100%;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .tickets {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 0 11px 2px #00000014;
+      border-radius: 3px;
+      margin-top: 35px;
+      .top_box {
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        .box_title {
+          padding: 15px;
+          h3 {
+            margin: 0;
+            font-family: "Cairo", sans-serif !important;
+            color: #222;
+            font-size: 22px;
+          }
+        }
+      }
+      .tickets_item {
+        width: 100%;
+        .ticket {
+          width: 100%;
+          padding: 7px 15px 7px 15px;
+          cursor: pointer;
+          transition: all 0.2s;
+          text-decoration: none;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #eee;
+          }
+          &:hover {
+            background-color: #1b7dc02b !important;
+          }
+          .ico {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1b7dc0;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            i {
+              color: #fff;
+            }
+          }
+          p {
+            margin: 0;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 9px 50px 9px 0;
+            color: #222;
+          }
+        }
+      }
+    }
+    // Media
+    @media (max-width: 767px) {
+      .sections {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .top_infos {
+        flex-wrap: wrap;
+        justify-content: center;
+        .profile_box {
+          width: 100%;
+          .edits {
+            display: flex;
+          }
+        }
+        .all_money {
+          .u_money {
+            margin-right: 0;
+            margin-top: 15px;
+          }
+          .add-money {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+    @media (max-width: 400px) {
+      .sections {
+        grid-template-columns: repeat(1, 1fr);
+        .sec {
+          &:hover {
+            transform: scale(1);
+            box-shadow: 0 0 11px 2px #0000003d;
+          }
+        }
+      }
+      .top_infos {
+        .all_money {
+          width: 100%;
+          flex-wrap: wrap;
+          .u_money {
+            width: 100%;
+          }
+          .add-money {
+            margin-right: 0;
+            width: 100%;
+            display: block;
+            button {
+              display: block;
+              margin: 0 auto;
+              width: 132px;
+              border-radius: 2px;
+              padding: 7px 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

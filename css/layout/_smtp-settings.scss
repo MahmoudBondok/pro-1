@@ -1,0 +1,162 @@
+.smtp_settings {
+  .smtp_settings-content {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px;
+    padding: 20px;
+    .smtp_form {
+      .sec {
+        width: 100%;
+        display: flex;
+        .inpt {
+          display: flex;
+          flex-wrap: wrap;
+          width: 50%;
+          margin-bottom: 15px;
+          position: relative;
+          margin-left: 10px;
+          label {
+            width: 100%;
+            color: #333;
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          input {
+            width: 100%;
+            border: 1px solid #00000047;
+            height: 33px;
+            outline: none;
+            text-indent: 7px;
+            font-size: 14px;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+          select {
+            outline: none;
+            display: block;
+            height: 33px;
+            width: 100%;
+            padding: 0 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #00000047;
+            border-radius: 0;
+            transition: border-color ease-in-out 0.15s,
+              box-shadow ease-in-out 0.15s;
+          }
+          &.num {
+            input {
+              font-family: initial;
+              &::-webkit-outer-spin-button,
+              &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+      .radi {
+        p {
+          margin-left: 15px;
+          margin-bottom: 0;
+          input[type="radio"]:checked,
+          input[type="radio"]:not(:checked) {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+          }
+          input[type="radio"]:checked + label,
+          input[type="radio"]:not(:checked) + label {
+            position: relative;
+            padding-right: 24px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: #666;
+          }
+          input[type="radio"]:checked + label:before,
+          input[type="radio"]:not(:checked) + label:before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ddd;
+            border-radius: 100%;
+            background: #fff;
+          }
+          input[type="radio"]:checked + label:after,
+          input[type="radio"]:not(:checked) + label:after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: #1b7dc0;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            border-radius: 100%;
+            transition: all 0.2s ease;
+          }
+          input[type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+          }
+          input[type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+      }
+      .btns {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        button {
+          padding: 7px 30px;
+          background: #1b7dc0;
+          color: #fff;
+          cursor: pointer;
+          outline: none;
+          border: 0;
+          border-radius: 2px;
+          transition: all 0.2s;
+          &:first-of-type {
+            margin-left: 10px;
+            &:hover {
+              background: #14649c;
+            }
+          }
+          &:last-of-type {
+            background-color: #f00;
+            &:hover {
+              background-color: #cf0707;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Media
+  @media (max-width: 767px) {
+    .smtp_settings-content .smtp_form .sec {
+      flex-wrap: wrap;
+      .inpt {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+}

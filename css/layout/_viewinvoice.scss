@@ -1,0 +1,246 @@
+.viewinvoice {
+  .viewinvoice_content {
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px 0 3px 3px;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    width: 800px;
+    position: relative;
+    .state {
+      position: absolute;
+      top: -24px;
+      right: 0;
+      p {
+        background: #cc3f44;
+        width: fit-content;
+        border-radius: 3px 3px 0 0;
+        color: #fff;
+        font-size: 12px;
+        padding: 3px 9px;
+      }
+    }
+    .top_info {
+      display: flex;
+      .nums {
+        width: 50%;
+      }
+      .date {
+        width: 50%;
+      }
+    }
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
+    .companies {
+      width: 100%;
+      display: flex;
+      margin-top: 30px;
+      .companie {
+        width: fit-content;
+        width: 50%;
+        h4 {
+          color: #222;
+          margin: 0;
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 3px;
+        }
+        p {
+          color: #222;
+        }
+      }
+    }
+    .tab {
+      margin-top: 20px;
+      h4 {
+        color: #222;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 7px;
+      }
+      .tab_con {
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+          height: 5px;
+        }
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.356);
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #1b7dc0;
+        }
+        .tabl {
+          min-width: 310px;
+          .lis,
+          .result {
+            width: 100%;
+            display: flex;
+            padding: 4px;
+            border-bottom: 1px solid #efe4e4;
+            p {
+              width: 70%;
+              font-weight: 700;
+              &:last-of-type {
+                width: 30%;
+              }
+            }
+          }
+          .all_tab {
+            .elm-lis {
+              width: 100%;
+              display: flex;
+              padding: 4px;
+              border-bottom: 1px solid #efe4e4;
+              p {
+                width: 70%;
+                font-weight: 200;
+                &:last-of-type {
+                  width: 30%;
+                }
+              }
+            }
+          }
+          .result {
+            margin-top: 0;
+            background: #eee;
+          }
+        }
+      }
+    }
+    .tab-2 {
+      margin-top: 20px;
+      h4 {
+        color: #222;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 7px;
+      }
+      .tab_con {
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+          height: 5px;
+        }
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.356);
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #1b7dc0;
+        }
+        .tabl {
+          min-width: 500px;
+          .lis {
+            width: 100%;
+            display: flex;
+            padding: 4px;
+            border-bottom: 1px solid #efe4e4;
+            p {
+              font-weight: 700;
+              &:first-of-type {
+                width: 20%;
+              }
+              &:nth-of-type(2) {
+                width: 20%;
+              }
+              &:nth-of-type(3) {
+                width: 40%;
+              }
+              &:last-of-type {
+                width: 20%;
+              }
+            }
+          }
+          .all_tab {
+            .elm-lis {
+              width: 100%;
+              display: flex;
+              padding: 4px;
+              border-bottom: 1px solid #efe4e4;
+              p {
+                font-weight: 200;
+                &:first-of-type {
+                  width: 20%;
+                }
+                &:nth-of-type(2) {
+                  width: 20%;
+                }
+                &:nth-of-type(3) {
+                  width: 40%;
+                }
+                &:last-of-type {
+                  width: 20%;
+                }
+              }
+            }
+          }
+          .result {
+            width: 100%;
+            display: flex;
+            padding: 4px;
+            border-bottom: 1px solid #efe4e4;
+            margin-top: 0;
+            background: #eee;
+            p {
+              width: 80%;
+              font-weight: 700;
+              &:last-of-type {
+                width: 20%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .print {
+    width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    .btn_pr {
+      float: left;
+      background: #1b7dc0;
+      padding: 8px 16px;
+      color: #fff;
+      margin-left: 5px;
+      border-radius: 2px;
+      transition: all 0.2s;
+      cursor: pointer;
+      &:hover {
+        background-color: #14649c;
+      }
+    }
+  }
+  // Media
+  @media (max-width: 860px) {
+    .viewinvoice_content,
+    .print {
+      width: 100%;
+    }
+  }
+  @media (max-width: 560px) {
+    .viewinvoice_content {
+      .top_info {
+        flex-wrap: wrap;
+        .nums,
+        .date {
+          width: 100%;
+        }
+        .date {
+          margin-top: 15px;
+        }
+      }
+      .companies {
+        flex-wrap: wrap;
+        .companie {
+          width: 100%;
+          &:first-of-type {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}

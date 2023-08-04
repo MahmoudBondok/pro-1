@@ -1,0 +1,110 @@
+.clientarea {
+  .clientarea_content {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 11px 2px #0000002b;
+    border-radius: 3px;
+    margin-top: 30px;
+    .top_box {
+      display: flex;
+      width: 100%;
+      position: relative;
+      flex-wrap: wrap;
+      .box_title {
+        padding: 15px;
+        h3 {
+          margin: 0;
+          font-family: "Cairo", sans-serif !important;
+          color: #222;
+          font-size: 22px;
+        }
+      }
+      .options {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        display: flex;
+        .add {
+          display: flex;
+          text-decoration: none;
+          background-color: #1b7dc0;
+          color: #fff;
+          transition: all 0.2s;
+          font-size: 14px;
+          padding: 5px 14px;
+          cursor: pointer;
+          border-radius: 2px;
+          &:hover {
+            background-color: #14649c;
+          }
+          i {
+            font-size: 11px;
+            margin: 5px 0 0 6px;
+            transition: all 0.2s;
+          }
+        }
+      }
+    }
+    .ps {
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.13);
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: $base-color;
+      }
+      table {
+        width: 100%;
+        direction: rtl;
+        margin: 0;
+        min-width: 600px;
+        border-top: 1px solid #ccc;
+        thead tr {
+          th {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom-color: #ccc;
+            background-color: #1b7dc0;
+          }
+        }
+        tbody tr {
+          transition: all 0.2s;
+          &:hover {
+            background-color: #eee;
+          }
+          &:last-of-type {
+            td {
+              border-bottom: 0;
+            }
+          }
+          td {
+            color: #000;
+            font-size: 13px;
+            font-weight: 700;
+            p,
+            a {
+              margin: 0;
+              padding: 5px 0px;
+            }
+            a {
+              text-decoration: none;
+              color: #222;
+              display: flex;
+              width: fit-content;
+              cursor: pointer;
+              transition: all 0.2s;
+              &:hover {
+                color: #1b7dc0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
